@@ -74,6 +74,9 @@ h3 {
   text-align: center;
 }
 
+/* ====================================
+  header */
+
 .logo {
   max-width: 100px;
   margin-bottom: 35px;
@@ -148,6 +151,31 @@ header {
 .titrage {
   text-align: center;
 }
+
+/* ====================================
+  main */
+
+h3 {
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+.evenement {
+  background-color: lightgray;
+  color: black;
+}
+
+.carte {
+  background-color: black;
+  color: white;
+}
+
+.qui-sommes-nous {
+  background-color: lightgray;
+  color: black;
+}
+/* ====================================
+  footer */
 
 .footer-container {
   display: flex;
