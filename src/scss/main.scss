@@ -155,6 +155,10 @@ header {
 /* ====================================
   main */
 
+main {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
 h3 {
   font-size: 40px;
   margin: 40px 0;
@@ -165,6 +169,11 @@ h3 {
   color: black;
 }
 
+.article-evenement {
+  background-color: bisque;
+  min-height: fit-content;
+}
+
 .carte {
   background-color: black;
   color: white;
@@ -173,6 +182,86 @@ h3 {
 .qui-sommes-nous {
   background-color: lightgray;
   color: black;
+}
+
+.article {
+  background-color: aqua;
+  border: 2px solid black;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.button-plus {
+  background-color: black;
+  min-width: 20px;
+  min-height: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+}
+
+.button-plus::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1.5px;
+  width: 12px;
+  background-color: white;
+  bottom: 9.25px;
+  right: 4px;
+}
+
+.button-plus::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1.5px;
+  width: 12px;
+  background-color: white;
+  bottom: 9.25px;
+  right: 4px;
+  transform: rotate(90deg);
+}
+
+.article p {
+  padding: 20px;
+}
+
+.acces-complet {
+  margin: 30px 0 60px 0;
+  border: 2px solid black;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.grand {
+  height: 100%;
+}
+
+.moyen-grand {
+  height: 66%;
+}
+
+.moyen {
+  height: 50%;
+}
+
+.moyen-petit {
+  height: 33%;
+}
+
+main img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carte {
+  border-color: white;
+  color: white;
 }
 /* ====================================
   footer */
