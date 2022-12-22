@@ -162,37 +162,44 @@ main {
 h3 {
   font-size: 40px;
   margin: 40px 0;
+  text-align: center;
 }
 
 .evenement {
   background-color: lightgray;
   color: black;
-}
-
-.article-evenement {
-  background-color: bisque;
-  min-height: fit-content;
+  padding: 30px;
 }
 
 .carte {
   background-color: black;
   color: white;
+  padding: 30px;
 }
 
 .qui-sommes-nous {
   background-color: lightgray;
   color: black;
+  padding: 30px;
 }
 
-.article {
-  background-color: aqua;
+.evenement .article,
+.qui-sommes-nous .article {
   border: 2px solid black;
   font-size: 20px;
   position: relative;
   margin-bottom: 24px;
 }
 
-.button-plus {
+.carte .article {
+  border: 2px solid white;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.evenement .button-plus,
+.qui-sommes-nous .button-plus {
   background-color: black;
   min-width: 20px;
   min-height: 20px;
@@ -202,7 +209,8 @@ h3 {
   border-radius: 50%;
 }
 
-.button-plus::before {
+.evenement .button-plus::before,
+.qui-sommes-nous .button-plus::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -213,7 +221,8 @@ h3 {
   right: 4px;
 }
 
-.button-plus::after {
+.evenement .button-plus::after,
+.qui-sommes-nous .button-plus::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -225,13 +234,54 @@ h3 {
   transform: rotate(90deg);
 }
 
+.carte .button-plus {
+  background-color: white;
+  min-width: 20px;
+  min-height: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+}
+
+.carte .button-plus::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1.5px;
+  width: 12px;
+  background-color: black;
+  bottom: 9.25px;
+  right: 4px;
+}
+
+.carte .button-plus::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1.5px;
+  width: 12px;
+  background-color: black;
+  bottom: 9.25px;
+  right: 4px;
+  transform: rotate(90deg);
+}
+
 .article p {
   padding: 20px;
 }
 
-.acces-complet {
+.evenement .acces-complet,
+.qui-sommes-nous .acces-complet {
   margin: 30px 0 60px 0;
   border: 2px solid black;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.carte .acces-complet {
+  margin: 30px 0 60px 0;
+  border: 2px solid white;
   padding: 10px 10px;
   text-align: center;
 }
@@ -241,11 +291,11 @@ h3 {
 }
 
 .moyen-grand {
-  height: 66%;
+  height: calc(67% - 24px);
 }
 
 .moyen {
-  height: 50%;
+  height: calc(50% - 12px);
 }
 
 .moyen-petit {
@@ -259,10 +309,12 @@ main img {
   object-position: center;
 }
 
-.carte {
-  border-color: white;
-  color: white;
+.evenement .col-12,
+.carte .col-12,
+.qui-sommes-nous .col-12 {
+  margin: 30px 0 20px 0;
 }
+
 /* ====================================
   footer */
 
