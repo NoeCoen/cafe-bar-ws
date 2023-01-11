@@ -107,14 +107,13 @@ h1 {
 }
 
 header {
-  background-color: blue;
+  background-color: black;
   padding: 60px 40px;
   color: white;
 }
 
 @media screen and (max-width: 992px) {
   header {
-    background-color: red;
     padding: 50px 10px;
   }
 }
@@ -166,7 +165,7 @@ h3 {
 }
 
 .evenement {
-  background-color: lightgray;
+  background-color: white;
   color: black;
   padding: 30px;
 }
@@ -178,7 +177,7 @@ h3 {
 }
 
 .qui-sommes-nous {
-  background-color: lightgray;
+  background-color: white;
   color: black;
   padding: 30px;
 }
